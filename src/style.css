@@ -1,0 +1,70 @@
+body {
+    margin-left: 30%;
+}
+
+a {
+    line-height: 75px;
+    background-color: rgb(22, 24, 37);
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+    margin-left: 140px;
+}
+
+.logo {
+    height: 200px;
+    width: 400px;
+    background-color: rgb(43, 25, 43);
+    display: flex;
+}
+
+.logoname {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 55px;
+}
+
+.another {
+    background-color: rgb(43, 25, 43);
+    width: 400px;
+    margin-top: 20px;
+}
+
+.osnl {
+    background-color: rgb(43, 25, 43);
+    width: 400px;
+    margin-top: -487px;
+}
+
+.psh {
+    background-color: rgb(22, 24, 37);
+    position: relative;
+    top: -500px;
+    left: 20px;
+    color: white;
+    width: 350px;
+    height: 220px;
+    z-index: 99999;
+    display: block;
+
+}
+
+.banner {
+    background-color: rgb(43, 25, 43);
+    height: 150px;
+    width: 400px;
+    
+}
+
+.bannername {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+    position: relative;
+    left: 120px;
+    top: 40px;
+}
