@@ -1,12 +1,10 @@
 import React,{useState, useEffect} from "react";
-import Articels from "./Articles"
-import { useParams, Link, Route, Routes } from "react-router-dom";
+import { useParams, Link,} from "react-router-dom";
 
-function FirstArticle(props) {
+function FirstArticle() {
     const [article, setArticle] = useState();
     const [articleTitle, setArticleTitle] = useState();
     let {id} = useParams()
-    console.log(id)
 
     useEffect(() => {
         fetch(`https://dummyjson.com/posts/${id}`)
@@ -20,6 +18,11 @@ function FirstArticle(props) {
 
   
     return (
+      <>
+      <div className="logo">
+          <p className="logo-text">Logo</p>
+      </div>
+
       <div className="nav articlesList">
       { <>
             <h1 className="articleH1">{articleTitle}</h1>
@@ -30,6 +33,7 @@ function FirstArticle(props) {
           <Link to={"/Articles"}>назад</Link>
         </div>
       </div>
+      </>
     );
   }
 export{FirstArticle}

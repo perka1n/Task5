@@ -99,3 +99,83 @@ a{
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.gamesBack {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40px;
+    width: 400px;
+    margin-top: 10px;
+    background-color: rgb(101, 50, 190);
+    padding-bottom: 20px;
+}
+
+.notificationBlock {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(4, 10, 19);
+    width: 88%;
+    min-height: 60px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-top: 9px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.area{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(4, 10, 19);
+    width: 88%;
+    height:400px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-top: 9px;
+}
+.gameItem, .gameItemwin, .gameItemlose, .gameItemAddedAttempt{
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.firstRow, .secondRow, .thirdRow, .fourthRow, .fifthRow {
+    display: flex;
+    justify-content: space-around;
+}
+.itemWin{
+    width: 50px;
+    height: 50px;
+    background-image: url("./sprites/checkmark.png")!important;
+    background-size: cover!important;
+    pointer-events: none;
+
+}
+.itemLose{
+    width: 50px;
+    height: 50px;
+    background-image: url("./sprites/close.png")!important;
+    background-size: cover!important;
+    pointer-events: none;
+}
+.itemAddedAttempt{
+    width: 50px;
+    height: 50px;
+    background-image: url("./sprites/add.png")!important;
+    background-size: cover!important;
+    pointer-events: none;
+}

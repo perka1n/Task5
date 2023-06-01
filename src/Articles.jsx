@@ -1,5 +1,5 @@
 import React , {useState, useEffect} from "react";
-import {Route, Routes, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {FirstArticle} from "./FirtstArticle"
 
 function Articles(props){
@@ -15,6 +15,10 @@ function Articles(props){
   }, [])
 
   return(
+    <>
+          <div className="logo">
+            <p className="logo-text">Logo</p>
+          </div>
     <div className="nav articlesList"> 
       {
         titles.map((title, index) => (
@@ -24,10 +28,9 @@ function Articles(props){
         ))
 
       }
-      <Routes>
-          <Route path="/FirstArticle:/index" element={<FirstArticle/>} />
-      </Routes>
+
     </div>
+    </>
   );
 } 
 export {Articles};
